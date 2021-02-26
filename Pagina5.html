@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>Algoritmos</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- bootstrap css -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- style css -->
+<link rel="stylesheet" href="css/style.css">
+<!-- Responsive-->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- fevicon -->
+<link rel="icon" href="images/fevicon.png" type="image/gif" />
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<!-- Tweaks for older IEs-->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
+<body class="main-layout">
+<!-- loader  -->
+<div class="loader_bg">
+  <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+</div>
+<!-- end loader --> 
+<!-- header -->
+<header> 
+  <!-- header inner -->
+  <div class="head-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+          <div class="email"> <a href="#">Hecho por: Darlyn Sala  </a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+        <div class="full">
+          <div class="center-desk">
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+        <div class="menu-area">
+          <div class="limit-box">
+            <nav class="main-menu">
+              <ul class="menu-area-main">
+                <li> <a href="index.html">Portada</a> </li>
+                <li> <a href="Pagina2.html">Tema 2</a> </li>
+                <li> <a href="Pagina3.html"> Tema 3</a> </li>
+                <li> <a href="Pagina4.html">Tema 4</a> </li>
+                <li class="active"> <a href="Pagina5.html">Tema 5</a> </li>
+                <li> <a href="Pagina6.html">Referencias</a> </li>
+               <!-- <li> <a href="#"><img src="images/search_icon.png" alt="#" /></a> </li> -->
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end header inner --> 
+</header>
+<!-- end header -->
+<h2><strong>5.- Presentar dos (2) ejemplos con programas codificados que implementen manejo de cadenas.</strong></h2><br>
+<h2><strong>Ejemplo en C#</strong></h2>
+<p class="texto">// Ejemplo_04_04_01a.cs<br>
+// Cadenas de texto (1: manejo básico)<br>
+// Introducción a C#, por Nacho Cabanes<br><br>
+ 
+using System;<br><br>
+ 
+public class Ejemplo_04_04_01a<br>
+{<br>
+    public static void Main()<br>
+    {<br>
+        string saludo = "Hola";<br>
+        string segundoSaludo;<br>
+        string nombre, despedida;<br><br>
+ 
+        segundoSaludo = "Que tal?";<br>
+        Console.WriteLine("Dime tu nombre... ");<br>
+        nombre = Console.ReadLine(); <br><br>   
+ 
+        Console.WriteLine("{0} {1}", saludo, nombre);<br>
+        Console.WriteLine(segundoSaludo);<br><br>
+ 
+        if (nombre == "Alberto")<br>
+            Console.WriteLine("Dices que eres Alberto?");<br>
+        else<br>
+            Console.WriteLine("Así que no eres Alberto?");<br><br>
+ 
+        despedida = "Adios " + nombre + "!";<br>
+        Console.WriteLine(despedida);<br>
+    }<br>
+}<br><br>
+</p>
+<h2><strong>Realizar un programa que nos pida dos nombres por el teclado y que los compare si son iguales o no</strong></h2><br>
+<p class="texto">using System;<br>
+using System.Collections.Generic;<br>
+using System.Linq;<br>
+using System.Text;<br>
+namespace CadenaDeCaracteres<br>
+{<br>
+    class Program<br>
+  {<br>
+        static void Main(string[] args)<br>
+        {<br>
+            string nombre1, nombre2;<br>
+            Console.Write("Ingrese primer nombre:");<br>
+          nombre1 = Console.ReadLine();<br>
+            Console.Write("Ingrese segundo nombre:");<br>
+          nombre2 = Console.ReadLine();<br>
+            if (nombre1 == nombre2)<br>
+          {<br>
+                Console.Write("Los nombres son iguales");<br>
+          }<br>
+            else<br>
+          {<br>
+                Console.Write("Los nombres son distintos");<br>
+          }<br>
+            Console.ReadKey();<br>
+      }<br>
+  }<br>
+}<br><br>
+</p>
+
+
+<section class="slider_section">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6"> 
+<!-- Javascript files--> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap.bundle.min.js"></script> 
+<script src="js/jquery-3.0.0.min.js"></script> 
+<script src="js/plugin.js"></script> 
+
+<!-- sidebar --> 
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script> 
+<script src="js/custom.js"></script>
+</body>
+</html>

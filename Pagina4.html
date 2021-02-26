@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>Algoritmos</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- bootstrap css -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- style css -->
+<link rel="stylesheet" href="css/style.css">
+<!-- Responsive-->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- fevicon -->
+<link rel="icon" href="images/fevicon.png" type="image/gif" />
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<!-- Tweaks for older IEs-->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
+<body class="main-layout">
+<!-- loader  -->
+<div class="loader_bg">
+  <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+</div>
+<!-- end loader --> 
+<!-- header -->
+<header> 
+  <!-- header inner -->
+  <div class="head-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+          <div class="email"> <a href="#">Hecho por: Anderson Santos </a> </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+        <div class="full">
+          <div class="center-desk">
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+        <div class="menu-area">
+          <div class="limit-box">
+            <nav class="main-menu">
+              <ul class="menu-area-main">
+                <li> <a href="index.html">Portada</a> </li>
+                <li> <a href="Pagina2.html">Tema 2</a> </li>
+                <li> <a href="Pagina3.html"> Tema 3</a> </li>
+                <li class="active"> <a href="Pagina4.html">Tema 4</a> </li>
+                <li> <a href="Pagina5.html">Tema 5</a> </li>
+                <li> <a href="Pagina6.html">Referencias</a> </li>
+               <!-- <li> <a href="#"><img src="images/search_icon.png" alt="#" /></a> </li> -->
+
+
+
+
+
+
+
+               
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end header inner --> 
+</header>
+<!-- end header -->
+<h2><strong>4.- Una página donde se describan los principales algoritmos empleados para manejo de cadenas en los lenguajes de<br> programación (investigar en 6 lenguajes como mínimo).</strong></h2><br>
+
+<h2><strong>Declaración e inicialización de cadenas en C#</strong></h2>
+<p class="texto">// Declare without initializing.<br>
+string message1;<br><br>
+
+// Initialize to null.<br>
+string message2 = null;<br><br>
+
+// Initialize as an empty string.<br>
+// Use the Empty constant instead of the literal "".<br>
+string message3 = System.String.Empty;<br><br>
+
+// Initialize with a regular string literal.<br>
+string oldPath = "c:\\Program Files\\Microsoft Visual Studio 8.0";<br><br>
+
+// Initialize with a verbatim string literal.<br>
+string newPath = @"c:\Program Files\Microsoft Visual Studio 9.0";<br><br>
+
+// Use System.String if you prefer.<br>
+System.String greeting = "Hello World!";<br><br>
+
+// In local variables (i.e. within a method body)<br>
+// you can use implicit typing.<br>
+var temp = "I'm still a strongly-typed System.String!";<br><br>
+
+// Use a const string to prevent 'message4' from<br>
+// being used to store another string value.<br>
+const string message4 = "You can't get rid of me!";<br><br>
+
+// Use the String constructor only when creating<br>
+// a string from a char*, char[], or sbyte*. See<br>
+// System.String documentation for details.<br>
+char[] letters = { 'A', 'B', 'C' };<br>
+string alphabet = new string(letters);<br><br>
+</p>
+<h2><strong>Java</strong></h2>
+<p class="texto">import java.io.BufferedReade;<br>
+import java.io.IOException;<br>
+import java.io.InputStreamReader;<br>
+public class Ejerc12 {<br>
+    public static void main(String[] args) throws IOException{<br>
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));<br><br>
+
+        int i, c=0;<br>
+        String cadena, palabra="", mostrar = null;<br><br>
+
+        System.out.println("Ingrese la cadena: ");<br>
+        cadena=br.readLine();<br>
+        cadena+=" ";<br><br>
+
+        for(i=0;i<cadena.length();i++){<br>
+            palabra=palabra+cadena.charAt(i);<br>
+            if(cadena.charAt(i)==' '){<br>
+                if(palabra.length()-1>c){<br>
+                    c=palabra.length()-1;<br>
+                    mostrar=palabra.trim();<br><br>
+                }<br>
+                palabra="";<br><br>
+            } <br>
+        }<br>
+        System.out.println("La palabra de mayor longitud es: "+mostrar);<br>
+        System.out.println("Su longitud es: "+c);<br>
+    }<br>
+}<br><br>
+</p>
+<h2><strong>Cadenas de texto al estilo de C++</strong></h2>
+<p class="texto">// Introducción a C++, Nacho Cabanes<br>
+// Ejemplo 06.01:<br>
+// Primer ejemplo de cadenas de texto al estilo C<br><br>
+ 
+#include <iostream><br>
+using namespace std;<br><br>
+ 
+int main()<br>
+{<br>
+    char texto[40];         // Para guardar hasta 39 letras<br><br>
+ 
+    cout << "Introduce tu nombre: ";<br>
+    cin >>  texto;<br>
+    cout << "Hola " <<  texto << endl;<br><br>
+ 
+    return 0;<br>
+}<br><br>
+</p>
+
+<h2><strong>JavaScript</strong></h2>
+<p class="texto">   "script language="javascript"><br>
+      var presentacion = "Hola, bienvenido a mi página"<br>
+      var pregunta =  "¿Cómo te llamas?"<br>
+      alert(presentacion)<br>
+      var nombre = prompt(pregunta)<br>
+      document.write("Hola " + nombre)<br>
+   "script"<br><br>
+</p>
+<h2><strong>PHP</strong></h2>
+<p class="texto"><?php echo "--759275882966614861--"; ?><br>
+<?php echo "12484749827485315"; ?><br>
+< Manual de PHP de WebEstilo.com <br>
+"html"<br>
+"head"<br>
+   "title"Ejemplo de PHP"title"<br>
+"head"<br>
+"body"<br>
+<?php<br>
+   echo strlen("12345"),""br";<br><br>
+   
+   $palabras=split(" ","Esto es una prueba");<br>
+   for($i=0;$palabras[$i];$i++)<br>
+      echo $palabras[$i],""br";<br><br>
+      
+   $resultado=sprintf("8x5 = %d "br",8*5);<br>
+   echo $resultado,"br";<br><br>
+   
+   echo substr("Devuelve una subcadena de otra",9,3),"brbr";<br><br>
+
+   if (chop("Cadena \n\n ") == "Cadena")<br>
+      echo "Igualesbrbr";<br><br>
+
+   echo strpos("Busca la palabra dentro de la frase", "palabra"),"br "br";<br><br>
+   
+   echo str_replace("verde","rojo","Un pez de color verde, como verde es la hierba."),"br";<br><br>
+   
+?><br>
+"body"<br>
+"html"<br><br>
+
+</p>
+
+<section class="slider_section">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6"> 
+<!-- Javascript files--> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap.bundle.min.js"></script> 
+<script src="js/jquery-3.0.0.min.js"></script> 
+<script src="js/plugin.js"></script> 
+
+<!-- sidebar --> 
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script> 
+<script src="js/custom.js"></script>
+</body>
+</html>
